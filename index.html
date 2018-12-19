@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head>
+	<title>critical path method</title>
+	<link rel="stylesheet" type="text/css" href="cpm.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="cpm.js"></script>
+  <script  type="text/javascript" src="jquery-3.1.1.min.js"></script> 
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="xlsx.full.min.js"></script>
+ 
+</head>
+<body ng-controller='myController'>
+	<h1>CRITICAL PATH METHOD</h1>
+	<div class="container">
+		<form>
+          <label><span><input type="file" id="file" data-buttonText="Select a File" class="btn btn-primary"></span></lable> 
+          <label><button type="submit" value="submit" ng-click="uploadExcel()" class="btn btn-success">Upload File</button></label>
+        </form> 
+   </div>
+   <div>
+   	<table id="myTable">
+   	   <thead>
+   		  <tr>
+   			<th>ID</th>
+   			<th>Task Name</th>
+   			<th>Predecessors(Enter one ID per cell)</th>		
+            <th>O(min)</th>
+	        <th>M(most likely)</th>	
+	        <th>P(max)</th>
+	        <th>Duration(exp. time)</th>	
+	        <th>ES</th>
+	        <th>EF</th>
+	        <th>LS</th>
+	        <th>LF</th>
+	        <th>Slack</th>
+   		  </tr>
+   		</thead> 
+   		<tbody>
+   			
+   		</tbody> 
+   	</table>
+   </div>  
+</body>
+
+</html>
